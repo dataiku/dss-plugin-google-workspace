@@ -1,0 +1,57 @@
+{
+    "meta": {
+        "label": "Google Workspace logs crawler",
+        "description": "Retrieves audit logs from a Google Workspace and stores them into a daily-partitioned dataset",
+        "icon": "icon-terminal"
+    },
+    "kind": "PYTHON",
+    "outputRoles": [
+        {
+            "name": "main_output",
+            "label": "logs dataset",
+            "description": "Dataset where logs will be saved",
+            "arity": "UNARY",
+            "required": true,
+            "acceptsDataset": true
+        }
+    ],
+    "params": [
+        {
+          "type": "PRESET",
+          "name": "oauth",
+          "label": "OAuth 2.0 credentials",
+          "parameterSetId": "oauth-credentials"
+        },
+        {
+            "name": "application_name",
+            "label": "Application name",
+            "type": "SELECT",
+            "description": "Application name for which the events are to be retrieved.",
+            "mandatory": true,
+            "selectChoices": [
+                {"value": "access_transparency", "label": "Access Transparency"},
+                {"value": "admin", "label": "Admin"},
+                {"value": "calendar", "label": "Calendar"},
+                {"value": "chat", "label": "Chat"},
+                {"value": "chrome", "label": "Chrome"},
+                {"value": "context_aware_access", "label": "Context-Aware Access"},
+                {"value": "data_studio", "label": "Data Studio"},
+                {"value": "mobile", "label": "Device"},
+                {"value": "drive", "label": "Drive"},
+                {"value": "groups_enterprise", "label": "Entreprise Groups"},
+                {"value": "gcp", "label": "GCP"},
+                {"value": "gplus", "label": "Google+"},
+                {"value": "groups", "label": "Groups"},
+                {"value": "jamboard", "label": "Jamboard"},
+                {"value": "keep", "label": "Keep"},
+                {"value": "login", "label": "Login"},
+                {"value": "meet", "label": "Meet"},
+                {"value": "rules", "label": "Rules"},
+                {"value": "saml", "label": "SAML"},
+                {"value": "token", "label": "Token"},
+                {"value": "user_accounts", "label": "User Accounts"}
+            ]
+        }
+    ],
+    "resourceKeys": []
+}

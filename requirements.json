@@ -1,0 +1,5 @@
+{
+    "python" : [
+        {"name":"pandas", "version":">=1.0"}
+    ]
+}

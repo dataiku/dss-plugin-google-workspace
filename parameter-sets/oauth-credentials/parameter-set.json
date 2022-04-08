@@ -1,0 +1,22 @@
+{
+    "meta" : {
+        "label": "OAuth 2.0"
+    },
+    "defaultDefinableInline": false,
+    "defaultDefinableAtProjectLevel": true,
+    "pluginParams": [
+    ],
+    "params": [
+        {
+            "type": "CREDENTIAL_REQUEST",
+            "name": "oauth_credentials",
+            "label": "OAuth 2.0 configuration",
+            "credentialRequestSettings" : {
+                "type": "OAUTH2",
+                "authorizationEndpoint": "https://accounts.google.com/o/oauth2/auth",
+                "tokenEndpoint": "https://oauth2.googleapis.com/token",
+                "scope": "https://www.googleapis.com/auth/admin.reports.audit.readonly"
+            }
+        }
+    ]
+}

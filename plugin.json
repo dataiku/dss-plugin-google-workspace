@@ -1,16 +1,15 @@
 {
-    "id": "your-plugin-id",
+    "id": "google-workspace-logs",
     "version": "0.1.0",
     "meta": {
-        "label": "Plugin template - Replace by your plugin label",
-        "category": "Your category (optional)",
-        "description": "Your description (keep it short and simple)",
-        "author": "Organization (firstName LASTNAME)",
-        "icon": "icon-font-awesome-3.2.1",
-        "licenseInfo": "Apache Software License",
-        "url": "https://www.dataiku.com/product/plugins/your-plugin-id/",
+        "label": "Google Workspace logs",
+        "description": "Retrieves the audit logs from Google Workspace",
+        "author": "Dataiku (Dimitri LABOUESSE)",
+        "icon": "icon-terminal",
+        "licenseInfo": "Apache Software License version 2.0",
+        "url": "https://www.dataiku.com/product/plugins/google-workspace-logs/",
         "tags": [
-            "myTag"
+            "Connector"
         ],
         "supportLevel": "NOT_SUPPORTED"
     }
